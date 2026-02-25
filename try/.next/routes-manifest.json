@@ -1,0 +1,421 @@
+{
+  "version": 3,
+  "pages404": true,
+  "appType": "app",
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "priority": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [
+    {
+      "page": "/admin/alur-pendaftaran/[id]",
+      "regex": "^/admin/alur\\-pendaftaran/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/admin/alur\\-pendaftaran/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/admin/berita/[id]",
+      "regex": "^/admin/berita/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/admin/berita/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/admin/fasilitas/[id]",
+      "regex": "^/admin/fasilitas/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/admin/fasilitas/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/admin/halaman/[id]",
+      "regex": "^/admin/halaman/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/admin/halaman/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/admin/mitra/[id]",
+      "regex": "^/admin/mitra/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/admin/mitra/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/admin/pendidikan/[id]",
+      "regex": "^/admin/pendidikan/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/admin/pendidikan/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/admin/prestasi/[id]",
+      "regex": "^/admin/prestasi/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/admin/prestasi/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/admin/statistik/[id]",
+      "regex": "^/admin/statistik/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/admin/statistik/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/admin/struktur/[id]",
+      "regex": "^/admin/struktur/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/admin/struktur/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/admin/testimoni/[id]",
+      "regex": "^/admin/testimoni/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/admin/testimoni/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/admin/users/[id]",
+      "regex": "^/admin/users/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/admin/users/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/berita/[slug]",
+      "regex": "^/berita/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPslug": "nxtPslug"
+      },
+      "namedRegex": "^/berita/(?<nxtPslug>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/pendidikan/[id]",
+      "regex": "^/pendidikan/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/pendidikan/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/prestasi/[id]",
+      "regex": "^/prestasi/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/prestasi/(?<nxtPid>[^/]+?)(?:/)?$"
+    }
+  ],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_global-error",
+      "regex": "^/_global\\-error(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_global\\-error(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/admin/alur-pendaftaran",
+      "regex": "^/admin/alur\\-pendaftaran(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/alur\\-pendaftaran(?:/)?$"
+    },
+    {
+      "page": "/admin/alur-pendaftaran/tambah",
+      "regex": "^/admin/alur\\-pendaftaran/tambah(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/alur\\-pendaftaran/tambah(?:/)?$"
+    },
+    {
+      "page": "/admin/berita",
+      "regex": "^/admin/berita(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/berita(?:/)?$"
+    },
+    {
+      "page": "/admin/berita/tambah",
+      "regex": "^/admin/berita/tambah(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/berita/tambah(?:/)?$"
+    },
+    {
+      "page": "/admin/dashboard",
+      "regex": "^/admin/dashboard(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/dashboard(?:/)?$"
+    },
+    {
+      "page": "/admin/fasilitas",
+      "regex": "^/admin/fasilitas(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/fasilitas(?:/)?$"
+    },
+    {
+      "page": "/admin/fasilitas/tambah",
+      "regex": "^/admin/fasilitas/tambah(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/fasilitas/tambah(?:/)?$"
+    },
+    {
+      "page": "/admin/halaman",
+      "regex": "^/admin/halaman(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/halaman(?:/)?$"
+    },
+    {
+      "page": "/admin/halaman/tambah",
+      "regex": "^/admin/halaman/tambah(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/halaman/tambah(?:/)?$"
+    },
+    {
+      "page": "/admin/mitra",
+      "regex": "^/admin/mitra(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/mitra(?:/)?$"
+    },
+    {
+      "page": "/admin/mitra/tambah",
+      "regex": "^/admin/mitra/tambah(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/mitra/tambah(?:/)?$"
+    },
+    {
+      "page": "/admin/pendidikan",
+      "regex": "^/admin/pendidikan(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/pendidikan(?:/)?$"
+    },
+    {
+      "page": "/admin/pendidikan/tambah",
+      "regex": "^/admin/pendidikan/tambah(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/pendidikan/tambah(?:/)?$"
+    },
+    {
+      "page": "/admin/pesan",
+      "regex": "^/admin/pesan(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/pesan(?:/)?$"
+    },
+    {
+      "page": "/admin/prestasi",
+      "regex": "^/admin/prestasi(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/prestasi(?:/)?$"
+    },
+    {
+      "page": "/admin/prestasi/tambah",
+      "regex": "^/admin/prestasi/tambah(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/prestasi/tambah(?:/)?$"
+    },
+    {
+      "page": "/admin/settings",
+      "regex": "^/admin/settings(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/settings(?:/)?$"
+    },
+    {
+      "page": "/admin/statistik",
+      "regex": "^/admin/statistik(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/statistik(?:/)?$"
+    },
+    {
+      "page": "/admin/statistik/tambah",
+      "regex": "^/admin/statistik/tambah(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/statistik/tambah(?:/)?$"
+    },
+    {
+      "page": "/admin/struktur",
+      "regex": "^/admin/struktur(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/struktur(?:/)?$"
+    },
+    {
+      "page": "/admin/struktur/tambah",
+      "regex": "^/admin/struktur/tambah(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/struktur/tambah(?:/)?$"
+    },
+    {
+      "page": "/admin/testimoni",
+      "regex": "^/admin/testimoni(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/testimoni(?:/)?$"
+    },
+    {
+      "page": "/admin/testimoni/tambah",
+      "regex": "^/admin/testimoni/tambah(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/testimoni/tambah(?:/)?$"
+    },
+    {
+      "page": "/admin/users",
+      "regex": "^/admin/users(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/users(?:/)?$"
+    },
+    {
+      "page": "/admin/users/tambah",
+      "regex": "^/admin/users/tambah(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/users/tambah(?:/)?$"
+    },
+    {
+      "page": "/berita",
+      "regex": "^/berita(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/berita(?:/)?$"
+    },
+    {
+      "page": "/galeri",
+      "regex": "^/galeri(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/galeri(?:/)?$"
+    },
+    {
+      "page": "/icon.png",
+      "regex": "^/icon\\.png(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/icon\\.png(?:/)?$"
+    },
+    {
+      "page": "/kemitraan",
+      "regex": "^/kemitraan(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/kemitraan(?:/)?$"
+    },
+    {
+      "page": "/kontak",
+      "regex": "^/kontak(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/kontak(?:/)?$"
+    },
+    {
+      "page": "/login",
+      "regex": "^/login(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/login(?:/)?$"
+    },
+    {
+      "page": "/pencarian",
+      "regex": "^/pencarian(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/pencarian(?:/)?$"
+    },
+    {
+      "page": "/pendidikan",
+      "regex": "^/pendidikan(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/pendidikan(?:/)?$"
+    },
+    {
+      "page": "/pendidikan/formal",
+      "regex": "^/pendidikan/formal(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/pendidikan/formal(?:/)?$"
+    },
+    {
+      "page": "/pendidikan/non-formal",
+      "regex": "^/pendidikan/non\\-formal(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/pendidikan/non\\-formal(?:/)?$"
+    },
+    {
+      "page": "/pendidikan/pesantren",
+      "regex": "^/pendidikan/pesantren(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/pendidikan/pesantren(?:/)?$"
+    },
+    {
+      "page": "/prestasi",
+      "regex": "^/prestasi(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/prestasi(?:/)?$"
+    },
+    {
+      "page": "/profil/fasilitas",
+      "regex": "^/profil/fasilitas(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/profil/fasilitas(?:/)?$"
+    },
+    {
+      "page": "/profil/struktur",
+      "regex": "^/profil/struktur(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/profil/struktur(?:/)?$"
+    },
+    {
+      "page": "/profil/yayasan",
+      "regex": "^/profil/yayasan(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/profil/yayasan(?:/)?$"
+    },
+    {
+      "page": "/testimoni",
+      "regex": "^/testimoni(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/testimoni(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments",
+    "clientParamParsing": false,
+    "dynamicRSCPrerender": false
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}

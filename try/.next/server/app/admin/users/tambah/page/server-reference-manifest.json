@@ -1,0 +1,35 @@
+{
+  "node": {
+    "0092b0907e68a3999a3d165d87486d112e619ba333": {
+      "workers": {
+        "app/admin/users/tambah/page": {
+          "moduleId": 63306,
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "src/actions/auth.ts"
+        }
+      },
+      "layer": {
+        "app/admin/users/tambah/page": "action-browser"
+      },
+      "exportedName": "logoutAction",
+      "filename": "src/actions/auth.ts"
+    },
+    "401e5dada247b9d841c50c2513a32ca1e51461bea4": {
+      "workers": {
+        "app/admin/users/tambah/page": {
+          "moduleId": 63306,
+          "async": false,
+          "exportedName": "createUser",
+          "filename": "src/actions/user.ts"
+        }
+      },
+      "layer": {
+        "app/admin/users/tambah/page": "action-browser"
+      },
+      "exportedName": "createUser",
+      "filename": "src/actions/user.ts"
+    }
+  },
+  "edge": {}
+}

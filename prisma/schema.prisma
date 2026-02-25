@@ -1,0 +1,201 @@
+// file: prisma/schema.prisma
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+// 1. USER MANAGEMENT (Untuk Login Admin)
+model User {
+  id        Int      @id @default(autoincrement())
+  username  String   @unique
+  password  String   // Akan di-hash
+  name      String?
+  role      String   @default("admin") // admin, editor
+  createdAt DateTime @default(now())
+}
+
+// 2. HERO SECTION (Config Global)
+model SiteConfig {
+  id           Int     @id @default(autoincrement())
+  
+  // === IDENTITAS (HEADER) ===
+  siteName     String  @default("Mabadi'ul Ihsan")
+  logoUrl      String? @db.Text
+
+  // === HERO SECTION ===
+  heroTitle    String  @db.Text
+  heroSubtitle String  @db.Text
+  
+  // 3 Tombol Hero:
+  // 1. Pendaftaran (Button Utama)
+  registrationUrl String? @default("/pendaftaran") 
+  // 2. Brosur (Button Kedua)
+  brosurUrl       String? 
+  // 3. Video Profil (Button Ketiga / Background)
+  videoUrl        String? 
+
+  // === FOOTER & KONTAK ===
+  address      String? @db.Text
+  phone        String?
+  email        String?
+  facebook     String?
+  instagram    String?
+  youtube      String?
+  // === PROFIL LEMBAGA (BARU) ===
+  history         String?  @db.Text 
+  vision          String?  @db.Text 
+  mission         String?  @db.Text 
+  greeting        String?  @db.Text 
+  profileImage    String?  @db.Text
+  chairmanImage   String?  @db.Text
+  
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @default(now()) @updatedAt
+}
+
+// 3. STATISTIK (Angka Bergerak)
+model Stat {
+  id      Int    @id @default(autoincrement())
+  label   String // Contoh: "Peserta Didik"
+  value   Int    // Contoh: 1250
+  suffix  String? // Contoh: "+"
+  icon    String // Nama icon (disimpan sebagai string, misal "Users")
+}
+
+// 4. PRESTASI (Achievements)
+model Achievement {
+  id        Int      @id @default(autoincrement())
+  title     String
+  category  String   // Akademik, Keagamaan, Olahraga
+  level     String   // Nasional, Provinsi
+  student   String   // Nama Siswa/Tim
+  date      String   // Bulan Tahun
+  rank      Int      @default(1) // 1, 2, 3 (Untuk menentukan warna emas/silver)
+  image       String?  // Foto Dokumentasi
+  description String?  @db.Text // Cerita detail
+  createdAt   DateTime @default(now())
+}
+
+// 5. TESTIMONI
+model Testimonial {
+  id      Int    @id @default(autoincrement())
+  name    String
+  role    String // Contoh: "Wali Santri"
+  content String @db.Text
+  rating  Int    @default(5)
+  image     String?
+  isShow  Boolean @default(true)
+  createdAt DateTime @default(now())
+}
+
+// 6. BERITA & ARTIKEL (Yang sudah ada sebelumnya)
+model Post {
+  id        Int      @id @default(autoincrement())
+  title     String   @db.VarChar(255)
+  slug      String   @unique
+  excerpt   String?  @db.Text // Ringkasan pendek
+  content   String   @db.Text
+  image     String?
+  category  String   @default("Berita")
+  author    String?
+  eventDate DateTime?
+  published Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+// 7. PESAN MASUK (Kontak)
+model ContactMessage {
+  id        Int      @id @default(autoincrement())
+  name      String
+  email     String
+  subject   String
+  message   String   @db.Text
+  isRead    Boolean  @default(false)
+  createdAt DateTime @default(now())
+}
+model EducationUnit {
+  id          Int      @id @default(autoincrement())
+  name        String   // Contoh: SD Islam Mabadi'ul Ihsan
+  description String?  @db.Text
+  image       String?  // Foto Gedung/Kegiatan
+  link        String?  // Link ke website unit (opsional)
+  category    String   @default("Pendidikan Formal")
+  npsn          String?
+  status        String?  // Swasta / Negeri
+  accreditation String?  // A / B / C / Belum Terakreditasi
+  address       String?  @db.Text // Jalan...
+  village       String?  // Desa
+  district      String?  // Kecamatan
+  regency       String?  // Kabupaten
+  province      String?  // Provinsi
+  phone         String?
+  email         String?
+  facebookUrl   String?
+  instagramUrl  String?
+  tiktokUrl     String?
+  twitterUrl    String?
+  gallery       EducationGallery[]
+  createdAt   DateTime @default(now())
+}
+// TABEL BARU: GALERI KEGIATAN
+model EducationGallery {
+  id        Int           @id @default(autoincrement())
+  image     String        // URL Gambar
+  caption   String?       // Opsional: Keterangan foto
+  unitId    Int
+  unit      EducationUnit @relation(fields: [unitId], references: [id], onDelete: Cascade)
+}
+model RegistrationStep {
+  id          Int      @id @default(autoincrement())
+  title       String
+  description String   @db.Text
+  icon        String   // Nama Icon (misal: ClipboardList)
+  order       Int      // Urutan Tahapan (1, 2, 3...)
+  
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+model Partner {
+  id        Int      @id @default(autoincrement())
+  name      String
+  logo      String   // URL Logo
+  website   String?  // Link ke website mereka (Opsional)
+  order     Int      @default(0) // 1 = Tampil Pertama, 99 = Terakhir
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+model PageMeta {
+  id          Int      @id @default(autoincrement())
+  slug        String   @unique // Contoh: "kontak", "pendidikan-formal", "galeri"
+  title       String   // Judul Halaman
+  description String?  @db.Text // Subjudul / Deskripsi Banner
+  image       String?  // URL Gambar Banner
+  updatedAt   DateTime @updatedAt
+}
+// MODEL STRUKTUR ORGANISASI
+model OrganizationMember {
+  id        Int      @id @default(autoincrement())
+  name      String
+  position  String   // Jabatan (Ketua, Sekretaris, Bendahara, dll)
+  image     String?  // Foto Profil
+  order     Int      @default(0) // Untuk mengatur urutan (1 = Paling Atas)
+  
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+// MODEL FASILITAS
+model Facility {
+  id          Int      @id @default(autoincrement())
+  name        String
+  description String?  @db.Text
+  image       String   // Wajib ada gambar
+  
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}

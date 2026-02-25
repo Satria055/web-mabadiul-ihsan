@@ -1,0 +1,50 @@
+{
+  "node": {
+    "0092b0907e68a3999a3d165d87486d112e619ba333": {
+      "workers": {
+        "app/admin/berita/tambah/page": {
+          "moduleId": 31847,
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "src/actions/auth.ts"
+        }
+      },
+      "layer": {
+        "app/admin/berita/tambah/page": "action-browser"
+      },
+      "exportedName": "logoutAction",
+      "filename": "src/actions/auth.ts"
+    },
+    "401bfdf9f02105b29e0cf88ac94882e2c496dcc2e4": {
+      "workers": {
+        "app/admin/berita/tambah/page": {
+          "moduleId": 31847,
+          "async": false,
+          "exportedName": "createPost",
+          "filename": "src/actions/posts.ts"
+        }
+      },
+      "layer": {
+        "app/admin/berita/tambah/page": "action-browser"
+      },
+      "exportedName": "createPost",
+      "filename": "src/actions/posts.ts"
+    },
+    "4085dbf92d57f7fa3bc32a461d00eeb75c0ab43723": {
+      "workers": {
+        "app/admin/berita/tambah/page": {
+          "moduleId": 31847,
+          "async": false,
+          "exportedName": "uploadImage",
+          "filename": "src/actions/uploads.ts"
+        }
+      },
+      "layer": {
+        "app/admin/berita/tambah/page": "action-browser"
+      },
+      "exportedName": "uploadImage",
+      "filename": "src/actions/uploads.ts"
+    }
+  },
+  "edge": {}
+}

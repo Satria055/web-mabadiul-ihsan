@@ -1,0 +1,35 @@
+{
+  "node": {
+    "0092b0907e68a3999a3d165d87486d112e619ba333": {
+      "workers": {
+        "app/admin/statistik/tambah/page": {
+          "moduleId": 49445,
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "src/actions/auth.ts"
+        }
+      },
+      "layer": {
+        "app/admin/statistik/tambah/page": "action-browser"
+      },
+      "exportedName": "logoutAction",
+      "filename": "src/actions/auth.ts"
+    },
+    "40d20872aafa6124c2bbc8584cdb841230476a9fb1": {
+      "workers": {
+        "app/admin/statistik/tambah/page": {
+          "moduleId": 49445,
+          "async": false,
+          "exportedName": "createStat",
+          "filename": "src/actions/stats.ts"
+        }
+      },
+      "layer": {
+        "app/admin/statistik/tambah/page": "action-browser"
+      },
+      "exportedName": "createStat",
+      "filename": "src/actions/stats.ts"
+    }
+  },
+  "edge": {}
+}

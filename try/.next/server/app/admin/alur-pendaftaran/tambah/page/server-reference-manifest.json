@@ -1,0 +1,35 @@
+{
+  "node": {
+    "0092b0907e68a3999a3d165d87486d112e619ba333": {
+      "workers": {
+        "app/admin/alur-pendaftaran/tambah/page": {
+          "moduleId": 55646,
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "src/actions/auth.ts"
+        }
+      },
+      "layer": {
+        "app/admin/alur-pendaftaran/tambah/page": "action-browser"
+      },
+      "exportedName": "logoutAction",
+      "filename": "src/actions/auth.ts"
+    },
+    "40f8cf8d87f3cfc3a0371b2d68202e09274e8cd2f5": {
+      "workers": {
+        "app/admin/alur-pendaftaran/tambah/page": {
+          "moduleId": 55646,
+          "async": false,
+          "exportedName": "createStep",
+          "filename": "src/actions/registration.ts"
+        }
+      },
+      "layer": {
+        "app/admin/alur-pendaftaran/tambah/page": "action-browser"
+      },
+      "exportedName": "createStep",
+      "filename": "src/actions/registration.ts"
+    }
+  },
+  "edge": {}
+}

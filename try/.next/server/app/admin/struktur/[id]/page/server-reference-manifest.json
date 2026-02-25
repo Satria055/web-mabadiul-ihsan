@@ -1,0 +1,35 @@
+{
+  "node": {
+    "0092b0907e68a3999a3d165d87486d112e619ba333": {
+      "workers": {
+        "app/admin/struktur/[id]/page": {
+          "moduleId": 94985,
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "src/actions/auth.ts"
+        }
+      },
+      "layer": {
+        "app/admin/struktur/[id]/page": "action-browser"
+      },
+      "exportedName": "logoutAction",
+      "filename": "src/actions/auth.ts"
+    },
+    "601c6e537e11ea6d80bdba0cc26b20a1f1a87326b8": {
+      "workers": {
+        "app/admin/struktur/[id]/page": {
+          "moduleId": 94985,
+          "async": false,
+          "exportedName": "updateMember",
+          "filename": "src/actions/organization.ts"
+        }
+      },
+      "layer": {
+        "app/admin/struktur/[id]/page": "action-browser"
+      },
+      "exportedName": "updateMember",
+      "filename": "src/actions/organization.ts"
+    }
+  },
+  "edge": {}
+}

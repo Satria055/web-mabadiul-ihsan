@@ -1,26 +1,80 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* Palet Warna Mabadi'ul Ihsan */
+  --color-maroon-primary: #800000;  /* Merah Maroon Utama */
+  --color-maroon-dark: #4a0000;     /* Maroon Gelap */
+  --color-gold-primary: #FFD700;    /* Kuning Gold */
+  --color-gold-light: #FCEea7;      /* Gold Muda */
+  
+  /* Font Modern */
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, serif; 
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* Reset Dasar */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+  color: #333333;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Utilitas Kustom */
+.container-custom {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+/* --- STYLING EDITOR CONTENT (PENTING) --- */
+
+/* 1. Mencegah Layout Pecah (Grid Overflow Fix) */
+.prose {
+  overflow-wrap: break-word; /* Mematahkan kata/link yang sangat panjang */
+  word-wrap: break-word;
+  min-width: 0; /* Wajib ada agar tidak memaksa grid melebar */
+}
+
+/* 2. Styling Gambar & Media dalam Editor */
+.prose img, 
+.prose video, 
+.prose iframe {
+  max-width: 100% !important; /* Paksa lebar tidak lebih dari 100% */
+  height: auto !important;    /* Tinggi proporsional */
+  border-radius: 0.75rem;     /* Sudut tumpul */
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+}
+
+/* 3. Styling Teks Editor */
+.prose p {
+  margin-bottom: 1.5rem;
+  line-height: 1.8; 
+  color: #374151; 
+}
+
+.prose h2, .prose h3 {
+  color: #800000; 
+  font-weight: 700;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.prose ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.prose ol {
+  list-style-type: decimal;
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.prose blockquote {
+  border-left: 4px solid #FFD700;
+  padding-left: 1rem;
+  font-style: italic;
+  color: #555;
+  margin: 1.5rem 0;
 }

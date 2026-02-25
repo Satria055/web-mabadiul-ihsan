@@ -1,0 +1,35 @@
+{
+  "node": {
+    "0092b0907e68a3999a3d165d87486d112e619ba333": {
+      "workers": {
+        "app/admin/pendidikan/page": {
+          "moduleId": 68188,
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "src/actions/auth.ts"
+        }
+      },
+      "layer": {
+        "app/admin/pendidikan/page": "action-browser"
+      },
+      "exportedName": "logoutAction",
+      "filename": "src/actions/auth.ts"
+    },
+    "40a29be48c55d6faa7fb9b9eb3d20731868198f70c": {
+      "workers": {
+        "app/admin/pendidikan/page": {
+          "moduleId": 68188,
+          "async": false,
+          "exportedName": "deleteEducationUnit",
+          "filename": "src/actions/education.ts"
+        }
+      },
+      "layer": {
+        "app/admin/pendidikan/page": "action-browser"
+      },
+      "exportedName": "deleteEducationUnit",
+      "filename": "src/actions/education.ts"
+    }
+  },
+  "edge": {}
+}

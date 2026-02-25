@@ -1,0 +1,17 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/(public)/layout,_N_T_/(public)/profil/layout,_N_T_/(public)/profil/struktur/layout,_N_T_/(public)/profil/struktur/page,_N_T_/profil/struktur"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/!KHB1YmxpYyk/profil/struktur/__PAGE__",
+    "/!KHB1YmxpYyk/profil/struktur",
+    "/!KHB1YmxpYyk/profil",
+    "/!KHB1YmxpYyk",
+    "/_index",
+    "/_head"
+  ]
+}

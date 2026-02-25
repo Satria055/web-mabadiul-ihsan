@@ -1,0 +1,17 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/(public)/layout,_N_T_/(public)/pendidikan/layout,_N_T_/(public)/pendidikan/formal/layout,_N_T_/(public)/pendidikan/formal/page,_N_T_/pendidikan/formal"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/!KHB1YmxpYyk/pendidikan/formal/__PAGE__",
+    "/!KHB1YmxpYyk/pendidikan/formal",
+    "/!KHB1YmxpYyk/pendidikan",
+    "/!KHB1YmxpYyk",
+    "/_index",
+    "/_head"
+  ]
+}

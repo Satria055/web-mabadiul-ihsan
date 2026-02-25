@@ -1,0 +1,35 @@
+{
+  "node": {
+    "0092b0907e68a3999a3d165d87486d112e619ba333": {
+      "workers": {
+        "app/admin/struktur/tambah/page": {
+          "moduleId": 80020,
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "src/actions/auth.ts"
+        }
+      },
+      "layer": {
+        "app/admin/struktur/tambah/page": "action-browser"
+      },
+      "exportedName": "logoutAction",
+      "filename": "src/actions/auth.ts"
+    },
+    "4016ad0364d948e5526c413348c8448994fb61f095": {
+      "workers": {
+        "app/admin/struktur/tambah/page": {
+          "moduleId": 80020,
+          "async": false,
+          "exportedName": "createMember",
+          "filename": "src/actions/organization.ts"
+        }
+      },
+      "layer": {
+        "app/admin/struktur/tambah/page": "action-browser"
+      },
+      "exportedName": "createMember",
+      "filename": "src/actions/organization.ts"
+    }
+  },
+  "edge": {}
+}

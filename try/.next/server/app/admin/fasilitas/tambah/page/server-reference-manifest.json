@@ -1,0 +1,35 @@
+{
+  "node": {
+    "0092b0907e68a3999a3d165d87486d112e619ba333": {
+      "workers": {
+        "app/admin/fasilitas/tambah/page": {
+          "moduleId": 64946,
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "src/actions/auth.ts"
+        }
+      },
+      "layer": {
+        "app/admin/fasilitas/tambah/page": "action-browser"
+      },
+      "exportedName": "logoutAction",
+      "filename": "src/actions/auth.ts"
+    },
+    "40ab36975b6670fd32d9a23d05f2af95bc59bef092": {
+      "workers": {
+        "app/admin/fasilitas/tambah/page": {
+          "moduleId": 64946,
+          "async": false,
+          "exportedName": "createFacility",
+          "filename": "src/actions/facility.ts"
+        }
+      },
+      "layer": {
+        "app/admin/fasilitas/tambah/page": "action-browser"
+      },
+      "exportedName": "createFacility",
+      "filename": "src/actions/facility.ts"
+    }
+  },
+  "edge": {}
+}

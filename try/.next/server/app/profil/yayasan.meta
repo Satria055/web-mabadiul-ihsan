@@ -1,0 +1,17 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/(public)/layout,_N_T_/(public)/profil/layout,_N_T_/(public)/profil/yayasan/layout,_N_T_/(public)/profil/yayasan/page,_N_T_/profil/yayasan"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/!KHB1YmxpYyk/profil/yayasan/__PAGE__",
+    "/!KHB1YmxpYyk/profil/yayasan",
+    "/!KHB1YmxpYyk/profil",
+    "/!KHB1YmxpYyk",
+    "/_index",
+    "/_head"
+  ]
+}

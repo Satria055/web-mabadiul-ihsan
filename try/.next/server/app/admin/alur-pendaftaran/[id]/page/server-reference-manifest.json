@@ -1,0 +1,35 @@
+{
+  "node": {
+    "0092b0907e68a3999a3d165d87486d112e619ba333": {
+      "workers": {
+        "app/admin/alur-pendaftaran/[id]/page": {
+          "moduleId": 24381,
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "src/actions/auth.ts"
+        }
+      },
+      "layer": {
+        "app/admin/alur-pendaftaran/[id]/page": "action-browser"
+      },
+      "exportedName": "logoutAction",
+      "filename": "src/actions/auth.ts"
+    },
+    "60b073e54a4071551ec562bb1d704ae0c513b08a32": {
+      "workers": {
+        "app/admin/alur-pendaftaran/[id]/page": {
+          "moduleId": 24381,
+          "async": false,
+          "exportedName": "updateStep",
+          "filename": "src/actions/registration.ts"
+        }
+      },
+      "layer": {
+        "app/admin/alur-pendaftaran/[id]/page": "action-browser"
+      },
+      "exportedName": "updateStep",
+      "filename": "src/actions/registration.ts"
+    }
+  },
+  "edge": {}
+}

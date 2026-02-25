@@ -1,0 +1,35 @@
+{
+  "node": {
+    "0092b0907e68a3999a3d165d87486d112e619ba333": {
+      "workers": {
+        "app/admin/prestasi/[id]/page": {
+          "moduleId": 51345,
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "src/actions/auth.ts"
+        }
+      },
+      "layer": {
+        "app/admin/prestasi/[id]/page": "action-browser"
+      },
+      "exportedName": "logoutAction",
+      "filename": "src/actions/auth.ts"
+    },
+    "60205ba7efb1df56fe81780e716225ec79c1822449": {
+      "workers": {
+        "app/admin/prestasi/[id]/page": {
+          "moduleId": 51345,
+          "async": false,
+          "exportedName": "updateAchievement",
+          "filename": "src/actions/achievements.ts"
+        }
+      },
+      "layer": {
+        "app/admin/prestasi/[id]/page": "action-browser"
+      },
+      "exportedName": "updateAchievement",
+      "filename": "src/actions/achievements.ts"
+    }
+  },
+  "edge": {}
+}

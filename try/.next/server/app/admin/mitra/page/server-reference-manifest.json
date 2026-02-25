@@ -1,0 +1,35 @@
+{
+  "node": {
+    "0092b0907e68a3999a3d165d87486d112e619ba333": {
+      "workers": {
+        "app/admin/mitra/page": {
+          "moduleId": 88571,
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "src/actions/auth.ts"
+        }
+      },
+      "layer": {
+        "app/admin/mitra/page": "action-browser"
+      },
+      "exportedName": "logoutAction",
+      "filename": "src/actions/auth.ts"
+    },
+    "40aea1d7f80fb08b98c21c1ceb43d575e2a281106c": {
+      "workers": {
+        "app/admin/mitra/page": {
+          "moduleId": 88571,
+          "async": false,
+          "exportedName": "deletePartner",
+          "filename": "src/actions/partners.ts"
+        }
+      },
+      "layer": {
+        "app/admin/mitra/page": "action-browser"
+      },
+      "exportedName": "deletePartner",
+      "filename": "src/actions/partners.ts"
+    }
+  },
+  "edge": {}
+}

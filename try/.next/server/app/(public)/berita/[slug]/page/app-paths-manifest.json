@@ -1,0 +1,3 @@
+{
+  "/(public)/berita/[slug]/page": "app/(public)/berita/[slug]/page.js"
+}

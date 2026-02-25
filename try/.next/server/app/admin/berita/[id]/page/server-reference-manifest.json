@@ -1,0 +1,50 @@
+{
+  "node": {
+    "0092b0907e68a3999a3d165d87486d112e619ba333": {
+      "workers": {
+        "app/admin/berita/[id]/page": {
+          "moduleId": 59219,
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "src/actions/auth.ts"
+        }
+      },
+      "layer": {
+        "app/admin/berita/[id]/page": "action-browser"
+      },
+      "exportedName": "logoutAction",
+      "filename": "src/actions/auth.ts"
+    },
+    "600d1e582f851c2c69f49eb7abdd949b3b1d0cc09f": {
+      "workers": {
+        "app/admin/berita/[id]/page": {
+          "moduleId": 59219,
+          "async": false,
+          "exportedName": "updatePost",
+          "filename": "src/actions/posts.ts"
+        }
+      },
+      "layer": {
+        "app/admin/berita/[id]/page": "action-browser"
+      },
+      "exportedName": "updatePost",
+      "filename": "src/actions/posts.ts"
+    },
+    "4085dbf92d57f7fa3bc32a461d00eeb75c0ab43723": {
+      "workers": {
+        "app/admin/berita/[id]/page": {
+          "moduleId": 59219,
+          "async": false,
+          "exportedName": "uploadImage",
+          "filename": "src/actions/uploads.ts"
+        }
+      },
+      "layer": {
+        "app/admin/berita/[id]/page": "action-browser"
+      },
+      "exportedName": "uploadImage",
+      "filename": "src/actions/uploads.ts"
+    }
+  },
+  "edge": {}
+}

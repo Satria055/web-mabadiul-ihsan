@@ -1,0 +1,35 @@
+{
+  "node": {
+    "0092b0907e68a3999a3d165d87486d112e619ba333": {
+      "workers": {
+        "app/admin/fasilitas/[id]/page": {
+          "moduleId": 44514,
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "src/actions/auth.ts"
+        }
+      },
+      "layer": {
+        "app/admin/fasilitas/[id]/page": "action-browser"
+      },
+      "exportedName": "logoutAction",
+      "filename": "src/actions/auth.ts"
+    },
+    "60ccc6a69ad92513c9956df04edd3e734f1b0d08ee": {
+      "workers": {
+        "app/admin/fasilitas/[id]/page": {
+          "moduleId": 44514,
+          "async": false,
+          "exportedName": "updateFacility",
+          "filename": "src/actions/facility.ts"
+        }
+      },
+      "layer": {
+        "app/admin/fasilitas/[id]/page": "action-browser"
+      },
+      "exportedName": "updateFacility",
+      "filename": "src/actions/facility.ts"
+    }
+  },
+  "edge": {}
+}

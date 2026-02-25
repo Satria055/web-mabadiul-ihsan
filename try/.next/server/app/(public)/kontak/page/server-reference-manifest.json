@@ -1,0 +1,20 @@
+{
+  "node": {
+    "409dddf14722e0987fc3a9e894c2dab2aa735ed439": {
+      "workers": {
+        "app/(public)/kontak/page": {
+          "moduleId": 45222,
+          "async": false,
+          "exportedName": "submitContactForm",
+          "filename": "src/actions/contact.ts"
+        }
+      },
+      "layer": {
+        "app/(public)/kontak/page": "action-browser"
+      },
+      "exportedName": "submitContactForm",
+      "filename": "src/actions/contact.ts"
+    }
+  },
+  "edge": {}
+}

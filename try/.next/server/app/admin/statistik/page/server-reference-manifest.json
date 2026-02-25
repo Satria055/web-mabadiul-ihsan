@@ -1,0 +1,35 @@
+{
+  "node": {
+    "0092b0907e68a3999a3d165d87486d112e619ba333": {
+      "workers": {
+        "app/admin/statistik/page": {
+          "moduleId": 66765,
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "src/actions/auth.ts"
+        }
+      },
+      "layer": {
+        "app/admin/statistik/page": "action-browser"
+      },
+      "exportedName": "logoutAction",
+      "filename": "src/actions/auth.ts"
+    },
+    "40daa6353c0e5ad69ab02bad5247ffff8d15e11b2f": {
+      "workers": {
+        "app/admin/statistik/page": {
+          "moduleId": 66765,
+          "async": false,
+          "exportedName": "deleteStat",
+          "filename": "src/actions/stats.ts"
+        }
+      },
+      "layer": {
+        "app/admin/statistik/page": "action-browser"
+      },
+      "exportedName": "deleteStat",
+      "filename": "src/actions/stats.ts"
+    }
+  },
+  "edge": {}
+}

@@ -1,0 +1,35 @@
+{
+  "node": {
+    "0092b0907e68a3999a3d165d87486d112e619ba333": {
+      "workers": {
+        "app/admin/settings/page": {
+          "moduleId": 66484,
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "src/actions/auth.ts"
+        }
+      },
+      "layer": {
+        "app/admin/settings/page": "action-browser"
+      },
+      "exportedName": "logoutAction",
+      "filename": "src/actions/auth.ts"
+    },
+    "401b9452576b557657bc97bfff5cfa26e9f4ea95f2": {
+      "workers": {
+        "app/admin/settings/page": {
+          "moduleId": 66484,
+          "async": false,
+          "exportedName": "updateSiteConfig",
+          "filename": "src/actions/settings.ts"
+        }
+      },
+      "layer": {
+        "app/admin/settings/page": "action-browser"
+      },
+      "exportedName": "updateSiteConfig",
+      "filename": "src/actions/settings.ts"
+    }
+  },
+  "edge": {}
+}

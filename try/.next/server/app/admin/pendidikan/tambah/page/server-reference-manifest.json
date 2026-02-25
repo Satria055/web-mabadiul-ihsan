@@ -1,0 +1,35 @@
+{
+  "node": {
+    "0092b0907e68a3999a3d165d87486d112e619ba333": {
+      "workers": {
+        "app/admin/pendidikan/tambah/page": {
+          "moduleId": 18430,
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "src/actions/auth.ts"
+        }
+      },
+      "layer": {
+        "app/admin/pendidikan/tambah/page": "action-browser"
+      },
+      "exportedName": "logoutAction",
+      "filename": "src/actions/auth.ts"
+    },
+    "40948e398ca6826932b688f06c19fa0a91be15976c": {
+      "workers": {
+        "app/admin/pendidikan/tambah/page": {
+          "moduleId": 18430,
+          "async": false,
+          "exportedName": "createEducationUnit",
+          "filename": "src/actions/education.ts"
+        }
+      },
+      "layer": {
+        "app/admin/pendidikan/tambah/page": "action-browser"
+      },
+      "exportedName": "createEducationUnit",
+      "filename": "src/actions/education.ts"
+    }
+  },
+  "edge": {}
+}
